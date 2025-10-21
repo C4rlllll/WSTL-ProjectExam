@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BidSmart | Auction Store</title>
+<link rel="stylesheet" href="shopS.css">
+</head>
+<body>
+<header>
+<div class="navbar">
+<h1 class="logo">BidSmart <span>| Auction store</span></h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="help.html">Help</a>
+<a href="login.html" class="login-link">Sign up / Login</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="trending">
+<div class="section-header">
+<h2>Trending Bid</h2>
+<a href="#">See all</a>
+</div>
+<div class="product-container">
+<div class="product" data-name="Vintage Jacket" data-base="300" data-time="2025-10-22T23:00:00" data-img="vintJ.jpg">
+<img src="vintJ.jpg" alt="Vintage Jacket">
+<h3>Vintage Jacket</h3>
+<p>Current bid: ₱<span class="currentBid">300</span></p>
+<p>Time left: <span class="timer"></span></p>
+<button class="bid-btn">Place Bid</button>
+</div>
+</div>
+</section>
+<section class="other">
+<div class="section-header">
+<h2>Other Bid</h2>
+<a href="#">See all</a>
+</div>
+<div class="product-container">
+<div class="product" data-name="Tambay Cap" data-base="150" data-time="2025-10-22T22:00:00" data-img="tambayC.jpg">
+<img src="tambayC.jpg" alt="Tambay Cap">
+<h3>Tambay Cap</h3>
+<p>Current bid: ₱<span class="currentBid">150</span></p>
+<p>Time left: <span class="timer"></span></p>
+<button class="bid-btn">Place Bid</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Cart -->
+<div class="cart-icon">
+ 🛒 <span id="cartCount">0</span>
+</div>
+<!-- Bid Modal -->
+<div id="bidModal" class="modal">
+<div class="modal-content">
+<h3>💰 Place Your Bid</h3>
+<p id="itemName"></p>
+<input type="number" id="bidAmount" placeholder="Enter your bid amount (₱)" min="1">
+<div class="modal-buttons">
+<button id="confirmBid">Confirm</button>
+<button id="cancelBid">Cancel</button>
+</div>
+</div>
+</div>
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+<div class="modal-content">
+<h3>✅ Bid Placed!</h3>
+<p>Your bid has been added to your cart.</p>
+<button id="closeSuccess">OK</button>
+</div>
+</div>
+<script src="shop.js"></script>
+</body>
+</html>

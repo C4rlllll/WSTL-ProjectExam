@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f9f9e8; 
+  color: #111;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #8ccbf8; 
+  padding: 15px 40px;
+}
+
+.navBAr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  color: #111;
+  font-weight: 700;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navItem {
+  display: inline-block;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #005fa3;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content {
+  text-align: center;
+}
+
+.intro-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+}
+
+.intro-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.btn {
+  background-color: #74b9ff;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4fa8ff;
+}
