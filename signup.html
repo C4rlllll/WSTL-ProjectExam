@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BidSmart | Sign Up</title>
+    <link rel="stylesheet" href="signUp.css">
+  </head>
+ <body>
+<header>
+<div class="navbar">
+<h1 class="logo">BidSmart <span>| Auction store</span></h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="help.html">Help</a>
+</nav>
+</div>
+</header>
+<main>
+<div class="signup-container">
+<form id="signupForm" action="register.php" method="POST">
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname" required />
+
+<label for="gender">Gender</label>
+<select id="gender" name="gender" required>
+<option value="">Select Gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select>
+
+<label for="age">Age</label>
+<input type="number" id="age" name="age" min="1" max="120" required />
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required />
+
+<label for="username">Username</label>
+<input type="text" id="username" name="username" required />
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required />
+
+<div class="buttons">
+<button type="submit">Sign Up</button>
+<button type="button" onclick="window.location.href='index.html'">Cancel</button>
+</div>
+</form>
+
+<div class="login-link">
+Already have an account? <a href="login.html">Login here</a>
+</div>
+</div>
+</main>
+</body>
+</html>

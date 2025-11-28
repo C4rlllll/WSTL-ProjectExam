@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
    }
    updateTimer();
  });
- // When "Place Bid" clicked
+
  document.querySelectorAll(".bid-btn").forEach(btn => {
    btn.addEventListener("click", e => {
      currentProduct = e.target.closest(".product");
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
      bidModal.style.display = "flex";
    });
  });
- // Confirm bid
+
  confirmBid.addEventListener("click", () => {
    const bidValue = parseFloat(bidAmountInput.value);
    if (!bidValue || bidValue <= 0) {
