@@ -1,11 +1,12 @@
 <?php
 // Database configuration
-$servername = "localhost:3307";
+$servername = "localhost";
+$port = 3307;
 $db_username = "root";
 $db_password = "";
 $dbname = "bidsmart_db";
 
-$conn = new mysqli($servername, $db_username, $db_password, $dbname);
+$conn = new mysqli($servername, $db_username, $db_password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

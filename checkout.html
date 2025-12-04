@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BidSmart | Checkout</title>
+
+<!-- CSS file -->
+<link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+<header>
+  <nav class="navBAr">
+    <h2>BidSmart | Checkout</h2>
+    <ul class="navMenu">
+      <li class="navItem"><a href="index.html" class="navLink">Home</a></li>
+      <li class="navItem"><a href="shop.html" class="navLink">Shop</a></li>
+      <li class="navItem"><a href="help.html" class="navLink">Help</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="page-title">Checkout</h2>
+
+  <div class="checkout-container">
+
+    <h3>Billing Information</h3>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Juan Dela Cruz">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Juandc@email.com">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Street, City, ZIP">
+
+    <label for="payment">Payment Method</label>
+    <select id="payment">
+      <option value="">-- Select Payment --</option>
+      <option value="card">Credit/Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="cash">Cash on Delivery</option>
+      <option value="gcash">Gcash</option>
+    </select>
+
+    <!-- Card Fields -->
+    <div id="cardFields" class="payment-fields">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" placeholder="MM/YY">
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" placeholder="123">
+    </div>
+
+    <!-- PayPal Fields -->
+    <div id="paypalFields" class="payment-fields">
+      <label for="paypalEmail">PayPal Email</label>
+      <input type="email" id="paypalEmail" placeholder="you@example.com">
+
+      <label for="paypalPhone">Mobile Number</label>
+      <input type="text" id="paypalPhone" placeholder="09XXXXXXXXX">
+    </div>
+
+    <!-- Cash on Delivery Fields -->
+    <div id="cashFields" class="payment-fields">
+      <label for="cashMobile">Mobile Number</label>
+      <input type="text" id="cashMobile" placeholder="09XXXXXXXXX">
+
+      <label for="cashAmount">Amount of Cash</label>
+      <input type="number" id="cashAmount" placeholder="Enter amount" min="1">
+    </div>
+
+    <!-- Gcash Fields -->
+    <div id="gcashFields" class="payment-fields">
+      <label for="gcashMobile">Gcash Mobile Number</label>
+      <input type="text" id="gcashMobile" placeholder="09XXXXXXXXX">
+
+      <label for="gcashAmount">Amount to Pay</label>
+      <input type="number" id="gcashAmount" placeholder="Enter amount" min="1">
+    </div>
+
+    <div class="cart-summary" id="cartSummary">
+      <h4>Order Summary</h4>
+    </div>
+
+    <button id="payBtn">Confirm & Pay</button>
+  </div>
+</main>
+
+<!-- JS file -->
+<script src="checkout.js"></script>
+
+</body>
+</html>
+

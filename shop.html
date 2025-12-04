@@ -6,72 +6,140 @@
 <link rel="stylesheet" href="shopS.css">
 </head>
 <body>
+
 <header>
-<div class="navbar">
-<h1 class="logo">BidSmart <span>| Auction store</span></h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="help.html">Help</a>
-<a href="login.html" class="login-link">Sign up / Login</a>
-</nav>
-</div>
+    <div class="navbar">
+        <h1 class="logo">BidSmart <span>| Auction store</span></h1>
+        <nav>
+            <a href="logInMenu.html">Home</a>
+            <a href="help.html">Help</a>
+        </nav>
+    </div>
 </header>
+
 <main>
-<section class="trending">
-<div class="section-header">
-<h2>Trending Bid</h2>
-<a href="#">See all</a>
-</div>
-<div class="product-container">
-<div class="product" data-name="Vintage Jacket" data-base="300" data-time="2025-10-22T23:00:00" data-img="vintJ.jpg">
-<img src="vintJ.jpg" alt="Vintage Jacket">
-<h3>Vintage Jacket</h3>
-<p>Current bid: ₱<span class="currentBid">300</span></p>
-<p>Time left: <span class="timer"></span></p>
-<button class="bid-btn">Place Bid</button>
-</div>
-</div>
-</section>
-<section class="other">
-<div class="section-header">
-<h2>Other Bid</h2>
-<a href="#">See all</a>
-</div>
-<div class="product-container">
-<div class="product" data-name="Tambay Cap" data-base="150" data-time="2025-10-22T22:00:00" data-img="tambayC.jpg">
-<img src="tambayC.jpg" alt="Tambay Cap">
-<h3>Tambay Cap</h3>
-<p>Current bid: ₱<span class="currentBid">150</span></p>
-<p>Time left: <span class="timer"></span></p>
-<button class="bid-btn">Place Bid</button>
-</div>
-</div>
-</section>
+    <section class="trending">
+        <div class="section-header">
+            <h2>Trending Bid</h2>
+            <a href="#">See all</a>
+        </div>
+        <div class="product-container">
+            <div class="product" data-name="Vintage Jacket" data-base="300" data-time="2025-10-22T23:00:00" data-img="vintJ.jpg">
+                <img src="vintJ.jpg" alt="Vintage Jacket">
+                <h3>Vintage Jacket</h3>
+                <p>Current bid: ₱<span class="currentBid">300.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Nevermind Shirt Vintage" data-base="2000" data-time="2025-10-22T23:00:00" data-img="nvmShirt.png">
+                <img src="nvmShirt.png" alt="Nevermind Shirt Vintage">
+                <h3>Nevermind Shirt Vintage</h3>
+                <p>Current bid: ₱<span class="currentBid">2000.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Limited Nike Shoes" data-base="3000" data-time="2025-10-22T23:00:00" data-img="limShoes.png">
+                <img src="limShoes.png" alt="Limited Nike Shoes">
+                <h3>Limited Nike Shoes</h3>
+                <p>Current bid: ₱<span class="currentBid">3009.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Limited Hat" data-base="2800" data-time="2025-10-22T23:00:00" data-img="LimHat.png">
+                <img src="LimHat.png" alt="Limited Hat">
+                <h3>Bruno Mars Hat</h3>
+                <p>Current bid: ₱<span class="currentBid">2800.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Respira Shoes" data-base="2300" data-time="2025-10-22T23:00:00" data-img="respiraShoes.png">
+                <img src="respiraShoes.png" alt="Respira Shoes">
+                <h3>Respira Shoes</h3>
+                <p>Current bid: ₱<span class="currentBid">2300.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="other">
+        <div class="section-header">
+            <h2>Other Bid</h2>
+            <a href="#">See all</a>
+        </div>
+        <div class="product-container">
+            <div class="product" data-name="Tambay Cap" data-base="150" data-time="2025-12-22T22:00:00" data-img="tambayC.jpg">
+                <img src="tambayC.jpg" alt="Tambay Cap">
+                <h3>Tambay Cap</h3>
+                <p>Current bid: ₱<span class="currentBid">150.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Herschel Bag" data-base="1500" data-time="2025-12-25T22:00:00" data-img="herschelBag.png">
+                <img src="herschelBag.png" alt="Herschel Bag">
+                <h3>Herschel Bag</h3>
+                <p>Current bid: ₱<span class="currentBid">1500.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Vintage Astro World" data-base="1000" data-time="2025-12-23T22:00:00" data-img="vintAsro.png">
+                <img src="vintAsro.png" alt="Vintage Astro World">
+                <h3>Vintage Astro World</h3>
+                <p>Current bid: ₱<span class="currentBid">1000.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="Vintage Chicago Bulls" data-base="1200" data-time="2025-12-22T22:00:00" data-img="vintChic.png">
+                <img src="vintChic.png" alt="Vintage Chicago Bulls">
+                <h3>Vintage Chicago Bulls</h3>
+                <p>Current bid: ₱<span class="currentBid">1200.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+
+            <div class="product" data-name="RL Sweater" data-base="800" data-time="2025-12-22T22:00:00" data-img="rlSweater.png">
+                <img src="rlSweater.png" alt="RL Sweater">
+                <h3>RL Sweater</h3>
+                <p>Current bid: ₱<span class="currentBid">800.00</span></p>
+                <p>Time left: <span class="timer">Loading...</span></p>
+                <button class="bid-btn">Place Bid</button>
+            </div>
+        </div>
+    </section>
 </main>
-<!-- Floating Cart -->
-<div class="cart-icon">
- 🛒 <span id="cartCount">0</span>
+
+<a href="cart.html" class="cart-icon">
+    🛒 <span id="cartCount">0</span>
+</a>
+
+<div id="bidModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+    <div class="modal-content" style="background:white; padding:20px; border-radius:5px; width:300px; text-align:center;">
+        <h3>💰 Place Your Bid</h3>
+        <p id="itemName"></p>
+        <p>Current Highest: ₱<span id="modalCurrentBid"></span></p>
+        <input type="number" id="bidAmount" placeholder="Enter amount (₱)" style="width:100%; padding:8px; margin:10px 0;">
+        <div class="modal-buttons">
+            <button id="confirmBid" style="padding:8px 15px; background:green; color:white; border:none; cursor:pointer;">Confirm</button>
+            <button id="cancelBid" style="padding:8px 15px; background:red; color:white; border:none; cursor:pointer;">Cancel</button>
+        </div>
+    </div>
 </div>
-<!-- Bid Modal -->
-<div id="bidModal" class="modal">
-<div class="modal-content">
-<h3>💰 Place Your Bid</h3>
-<p id="itemName"></p>
-<input type="number" id="bidAmount" placeholder="Enter your bid amount (₱)" min="1">
-<div class="modal-buttons">
-<button id="confirmBid">Confirm</button>
-<button id="cancelBid">Cancel</button>
+
+<div id="successModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+    <div class="modal-content" style="background:white; padding:20px; border-radius:5px; text-align:center;">
+        <h3>✅ Bid Placed!</h3>
+        <p>Your bid has been accepted.</p>
+        <button id="closeSuccess" style="padding:8px 15px; background:blue; color:white; border:none; cursor:pointer;">OK</button>
+    </div>
 </div>
-</div>
-</div>
-<!-- Success Modal -->
-<div id="successModal" class="modal">
-<div class="modal-content">
-<h3>✅ Bid Placed!</h3>
-<p>Your bid has been added to your cart.</p>
-<button id="closeSuccess">OK</button>
-</div>
-</div>
+
 <script src="shop.js"></script>
 </body>
 </html>
